@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -191,6 +192,13 @@
                             Designed for long mechanical and electrical service.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%204100"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -216,6 +224,13 @@
                             power, communications, alarm, support and
                             industrial control applications.
                         </p>
+
+                        <a
+                            href="contact.html?product=Series%204200"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
 
                     </article>
 
@@ -243,6 +258,13 @@
                             hoist control, ground support and industrial systems.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%204400"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -268,6 +290,13 @@
                             in custom test equipment, broadcasting consoles,
                             traffic control and industrial control panels.
                         </p>
+
+                        <a
+                            href="contact.html?product=Series%204600"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
 
                     </article>
 
@@ -295,6 +324,13 @@
                             telecommunications applications.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%204700"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -320,6 +356,13 @@
                             under development. Contact Entech Controls
                             Corporation directly for more information.
                         </p>
+
+                        <a
+                            href="contact.html?product=Series%204900"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
 
                     </article>
 
@@ -347,6 +390,13 @@
                             and up to 24 independent circuits.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%205000"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -371,6 +421,13 @@
                             A high contact density family of turn switches
                             with extensive circuit switching capability.
                         </p>
+
+                        <a
+                            href="contact.html?product=Series%205400"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
 
                     </article>
 
@@ -398,6 +455,13 @@
                             integral LED configurations.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%205500"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -424,6 +488,13 @@
                             and instrument applications.
                         </p>
 
+                        <a
+                            href="contact.html?product=Series%205600"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
+
                     </article>
 
 
@@ -448,6 +519,13 @@
                             Additional switch designs that do not fit
                             neatly into a single standard product category.
                         </p>
+
+                        <a
+                            href="contact.html?product=Miscellaneous%20Switches"
+                            class="product-inquiry-btn"
+                        >
+                            Ask About This Product
+                        </a>
 
                     </article>
 
@@ -562,3 +640,28 @@
 </body>
 
 </html>
+```
+
+You will also need a small CSS addition so the buttons look like part of the cards. Add this to your existing `style.css`:
+
+```css
+.product-inquiry-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 18px;
+    background: #ffffff;
+    color: #12395b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.product-inquiry-btn:hover {
+    background: #12395b;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+

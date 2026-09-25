@@ -1,4 +1,3 @@
-
 /* =========================================
    ENTECH CONTROLS - MAIN STYLESHEET
    ========================================= */
@@ -15,6 +14,7 @@
     --white: #ffffff;
     --max: 1160px;
 }
+
 
 /* =========================================
    RESET
@@ -67,6 +67,7 @@ select {
 .section-light {
     background: var(--light);
 }
+
 
 /* =========================================
    TYPOGRAPHY
@@ -132,6 +133,7 @@ p {
     text-decoration: underline;
 }
 
+
 /* =========================================
    HEADER
    ========================================= */
@@ -190,6 +192,7 @@ p {
     font-size: 1.7rem;
     cursor: pointer;
 }
+
 
 /* =========================================
    PRODUCTS DROPDOWN
@@ -268,6 +271,7 @@ p {
     background: var(--line);
 }
 
+
 /* =========================================
    HERO
    ========================================= */
@@ -314,6 +318,7 @@ p {
     margin-top: 34px;
 }
 
+
 /* =========================================
    BUTTONS
    ========================================= */
@@ -359,6 +364,7 @@ p {
     color: var(--navy);
 }
 
+
 /* =========================================
    PAGE HERO
    ========================================= */
@@ -381,6 +387,7 @@ p {
     font-size: 1.12rem;
 }
 
+
 /* =========================================
    GENERAL TWO COLUMN
    ========================================= */
@@ -396,6 +403,7 @@ p {
     color: var(--muted);
     font-size: 1.05rem;
 }
+
 
 /* =========================================
    HISTORY
@@ -434,6 +442,7 @@ p {
     font-weight: 900;
 }
 
+
 /* =========================================
    SECTION HEADINGS
    ========================================= */
@@ -446,6 +455,7 @@ p {
 .section-heading > p:last-child {
     color: var(--muted);
 }
+
 
 /* =========================================
    PRODUCT OVERVIEW
@@ -479,6 +489,7 @@ p {
 .product-card p {
     color: var(--muted);
 }
+
 
 /* =========================================
    CAPABILITIES
@@ -540,6 +551,7 @@ p {
     color: var(--muted);
     margin: 6px 0 0;
 }
+
 
 /* =========================================
    CAPABILITY BACKGROUND IMAGES
@@ -605,6 +617,7 @@ p {
     color: var(--white);
 }
 
+
 /* =========================================
    PRODUCT CATEGORIES
    ========================================= */
@@ -645,6 +658,7 @@ p {
     font-weight: 700;
 }
 
+
 /* =========================================
    CATEGORY GRID
    ========================================= */
@@ -681,6 +695,7 @@ p {
     color: var(--muted);
     flex-grow: 1;
 }
+
 
 /* =========================================
    CATALOG
@@ -727,6 +742,7 @@ p {
     background: var(--light);
 }
 
+
 /* =========================================
    CONTROL PANEL PRODUCT BACKGROUNDS
    ========================================= */
@@ -770,6 +786,7 @@ p {
     color: var(--white) !important;
 }
 
+
 /* =========================================
    SWITCHES FULL-WIDTH IMAGE
    ========================================= */
@@ -792,17 +809,10 @@ p {
     background-repeat: no-repeat;
 }
 
+
 /* =========================================
    SWITCH PRODUCT CARDS
    ========================================= */
-
-/*
-   IMPORTANT:
-   The actual image for each switch is now placed
-   directly on the HTML article element.
-
-   These rules control how that image displays.
-*/
 
 .switch-card {
     position: relative;
@@ -835,6 +845,7 @@ p {
         box-shadow .2s ease;
 }
 
+
 /* Dark overlay over the switch image */
 
 .switch-card::before {
@@ -850,6 +861,7 @@ p {
     transition: background .2s ease;
 }
 
+
 /* Put card content above the overlay */
 
 .switch-card > * {
@@ -863,11 +875,13 @@ p {
     color: var(--white) !important;
 }
 
+
 /* Keep the series label from growing */
 
 .switch-card .series-type {
     flex-grow: 0 !important;
 }
+
 
 /* Make description sit naturally at the bottom */
 
@@ -876,7 +890,88 @@ p {
     flex-grow: 0;
 }
 
+
+/* =========================================
+   ASK ABOUT THIS PRODUCT
+   ========================================= */
+
+.switch-card .product-inquiry-btn {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 9px;
+
+    margin-top: 18px;
+    padding: 0;
+
+    background: transparent !important;
+
+    color: var(--red) !important;
+
+    border: 0;
+    border-radius: 0;
+
+    text-decoration: none;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: .95rem;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+
+/* Red arrow */
+
+.switch-card .product-inquiry-btn::after {
+    content: "→";
+
+    display: inline-block;
+
+    color: var(--red) !important;
+
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1;
+
+    transition: transform .2s ease;
+}
+
+
 /* Hover */
+
+.switch-card .product-inquiry-btn:hover {
+    color: var(--red-dark) !important;
+    background: transparent !important;
+
+    transform: none;
+}
+
+.switch-card .product-inquiry-btn:hover::after {
+    color: var(--red-dark) !important;
+    transform: translateX(5px);
+}
+
+
+/* Make sure the switch-card hover overlay
+   does not affect the inquiry link */
+
+.switch-card:hover .product-inquiry-btn {
+    color: var(--red) !important;
+}
+
+.switch-card:hover .product-inquiry-btn::after {
+    color: var(--red) !important;
+}
+
+
+/* =========================================
+   SWITCH CARD HOVER
+   ========================================= */
 
 .switch-card:hover {
     transform: translateY(-5px);
@@ -886,6 +981,7 @@ p {
 .switch-card:hover::before {
     background: rgba(10, 15, 20, .30);
 }
+
 
 /* =========================================
    COMPLIANCE
@@ -946,6 +1042,7 @@ p {
     background-repeat: no-repeat;
 }
 
+
 /* =========================================
    CAPABILITY IMAGE
    ========================================= */
@@ -959,6 +1056,7 @@ p {
     border-radius: 6px;
     box-shadow: 0 6px 14px rgba(15, 23, 30, .06);
 }
+
 
 /* =========================================
    CONTACT
@@ -1029,6 +1127,7 @@ p {
     cursor: pointer;
 }
 
+
 /* =========================================
    TRUST
    ========================================= */
@@ -1061,6 +1160,7 @@ p {
     font-size: .9rem;
 }
 
+
 /* =========================================
    CTA
    ========================================= */
@@ -1089,6 +1189,7 @@ p {
 .contact-banner .eyebrow {
     color: var(--white);
 }
+
 
 /* =========================================
    FOOTER
@@ -1145,6 +1246,7 @@ p {
     margin: 0;
 }
 
+
 /* =========================================
    MOBILE / TABLET
    ========================================= */
@@ -1159,6 +1261,7 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 
 @media (max-width: 850px) {
 
@@ -1255,6 +1358,7 @@ p {
     }
 }
 
+
 @media (max-width: 650px) {
 
     .section {
@@ -1310,5 +1414,16 @@ p {
         min-height: 360px;
         background-size: cover !important;
         background-position: center !important;
+    }
+
+    /* Mobile version of inquiry link */
+
+    .switch-card .product-inquiry-btn {
+        margin-top: 18px;
+        font-size: .95rem;
+    }
+
+    .switch-card .product-inquiry-btn::after {
+        font-size: 1.2rem;
     }
 }
